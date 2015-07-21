@@ -2,7 +2,9 @@ Rails.application.routes.draw do
 
   get '/matches' => 'matches#index'
 
-  get '/matches/:player' => 'matches#get_player'
+  get '/matches/player/:player' => 'matches#get_player'
+
+  get '/matches/faction/:faction' => 'matches#get_faction'
 
 
 
